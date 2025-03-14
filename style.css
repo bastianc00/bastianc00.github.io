@@ -109,16 +109,18 @@ table th {
     }
 
     .info {
-        margin-right: 0; 
+        margin-right: 0;
         margin-bottom: 20px; 
-        border: 2px solid #3498db; 
-        padding: 10px; 
+        border: 2px solid #3498db;
+        padding: 10px;
+        width: 100%;
     }
 
     .profile-img {
-        width: 120px; 
-        height: auto; 
+        width: 120px;
+        height: auto;
         margin-bottom: 20px; 
+        order: 1; 
     }
 
     h2 {
