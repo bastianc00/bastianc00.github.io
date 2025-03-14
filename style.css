@@ -1,0 +1,13 @@
+#tittle {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; 
+}
+.header-container img {
+    margin-left: 20px; 
+    width: 150px; 
+    height: left; 
+}
