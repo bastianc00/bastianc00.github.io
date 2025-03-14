@@ -95,6 +95,12 @@ table th {
     border-radius: 4px;
 }
 
+#text-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 95%; 
