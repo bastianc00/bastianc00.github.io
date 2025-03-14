@@ -114,14 +114,14 @@ table th {
         border: 2px solid #3498db;
         padding: 10px;
         width: 100%;
-        order : 2;
+        order : 1;
     }
 
     .profile-img {
         width: 120px;
         height: auto;
         margin-bottom: 20px; 
-        order: 1; 
+
     }
 
     h2 {
