@@ -59,6 +59,34 @@
                 <td>Intermediate</td>
             </tr>
         </table>
+
+        <h2>Contact</h2>
+        <p>If you want to contact me, I suggest you write to me on any of my platforms.</p>
+        <div class="contact-images">
+            <a href="mailto:bcepeda@miuandes.cl.com">
+                <img src="images/email.png" alt="Email" class="contact-icon">
+            </a>
+            <a href="https://github.com/bastianc00">
+                <img src="images/github.png" alt="GitHub" class="contact-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/bastian-cepeda-092064176/">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+            </a>
+        </div>
+
+        <input type="text" id="text-input" placeholder="Enter some text">
+        <button id="button">Submit</button>
+
+        <div class="text-section">
+            <p id="display-text"></p>
+
+        </div>
+        <script>
+            document.getElementById('button').addEventListener('click', () => 
+            document.getElementById('display-text').textContent = document.getElementById('text-input').value);
+        </script>
+
+        
     </div>
 </body>
 </html>
