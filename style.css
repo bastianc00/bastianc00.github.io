@@ -109,7 +109,7 @@ table th {
 }
 
 .contact-icon {
-    width: 10px; 
+    width: 50px; 
     height: auto;
     transition: transform 0.3s ease; 
 }
