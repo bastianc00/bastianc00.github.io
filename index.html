@@ -4,89 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Personal Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
     <div class="container">
-        <h1 id="title">My Personal Page</h1>
-        <div class="header-container">
-            <div class="info">
+        <h1 id="title" class="text-center p-3 bg-primary text-white rounded">My Personal Page</h1>
+        <div class="header-container row mt-4">
+            <div class="info col-md-8">
                 <p><strong>Name:</strong> Bastián Cepeda</p>
                 <p><strong>Major:</strong> Civil Engineering in Computer Science</p>
                 <p><strong>Year of University Enrollment:</strong> 2022</p>
                 <p><strong>Github:</strong> <a href="https://github.com/bastianc00">github.com/bastianc00</a></p>
             </div>
-            <img src="images/me.jpg" alt="Mi imagen" class="profile-img">
-        </div>
-
-        <h2>About me</h2>
-        <p>
-            I am a fourth year student of Civil Engineering in Computer Science at Universidad de los Andes. I have experience in programming languages such as Python and SQL and I am currently learning Ruby and creating web pages.
-        </p>
-        <h2>Hobbies</h2>
-        <p>
-            I am also passionate about sports like Basketball, MTB and Crossfit. My favorite player is Stephen Curry, because he is the best player in the NBA.
-        </p>
-        <img src="images/nba_player.jpg" alt="Mi imagen" class="profile-img">
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Excel</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Ruby</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Intermediate</td>
-            </tr>
-        </table>
-
-        <h2 class="contact">Contact</h2>
-        <p class="contact">If you want to contact me, I suggest you write to me on any of my platforms.</p>
-        <div class="contact-images">
-            <a href="mailto:bcepeda@miuandes.cl">
-                <img src="images/email.png" alt="Email" class="contact-icon">
-            </a>
-            <a href="https://github.com/bastianc00">
-                <img src="images/github.png" alt="GitHub" class="contact-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/bastian-cepeda-092064176/">
-                <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
-            </a>
-        </div>
-
-        <div class="center-container">
-            <input type="text" id="text-input" placeholder="Enter some text">
-            <button id="button">Submit</button>
-            <div class="text-section">
-                <p id="display-text"></p>
+            <div class="col-md-4 text-center">
+                <img src="images/me.jpg" alt="Mi imagen" class="profile-img img-fluid rounded">
             </div>
         </div>
-        <script>
-            document.getElementById('button').addEventListener('click', () => 
-            document.getElementById('display-text').textContent = document.getElementById('text-input').value);
-        </script>
 
         
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 id="about" class="h4 mb-0">About me</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            I am a fourth year student of Civil Engineering in Computer Science at Universidad de los Andes. I have experience in programming languages such as Python and SQL and I am currently learning Ruby and creating web pages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Hobbies</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            I am also passionate about sports like Basketball, MTB and Crossfit. My favorite player is Stephen Curry, because he is the best player in the NBA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                <img src="images/nba_player.jpg" alt="NBA Player" class="img-fluid rounded shadow w-50">
+            </div>
+        </div>
+
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 id="skills" class="h4 mb-0">Skills</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML/CSS</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Excel</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Ruby</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>SQL</td>
+                                    <td>Intermediate</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Last News</h2>
+        <div >
+
+        </div>
+
+        
+        <h2 id="contact" class="contact mt-4">Contact</h2>
+        <p class="contact">If you want to contact me, I suggest you write to me on any of my platforms.</p>
+        <div class="contact-images row justify-content-center">
+            <div class="col-auto">
+                <a href="mailto:bcepeda@miuandes.cl">
+                    <img src="images/email.png" alt="Email" class="contact-icon">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://github.com/bastianc00">
+                    <img src="images/github.png" alt="GitHub" class="contact-icon">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://www.linkedin.com/in/bastian-cepeda-092064176/">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="center-container mt-4">
+            <input type="text" id="text-input" class="form-control" placeholder="Enter some text">
+            <button id="button" class="btn btn-primary mt-2">Submit</button>
+            <div class="text-section mt-3">
+                <p id="display-text" class="text-center"></p>
+            </div>
+        </div>
     </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('button').addEventListener('click', () => 
+        document.getElementById('display-text').textContent = document.getElementById('text-input').value);
+    </script>
 </body>
 </html>
